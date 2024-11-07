@@ -51,6 +51,9 @@ app.get("/login",(req,res)=>{
 app.get("/github",(req,res)=>{
     res.json(github)
 })
+app.get("/jeet",(req,res)=>{
+    res.send(`Welcome to Jeet's First Deployed Web Server`)
+})
 
 app.listen(process.env.PORT , () =>{
     console.log(`server is running in ${process.env.PORT}`)
